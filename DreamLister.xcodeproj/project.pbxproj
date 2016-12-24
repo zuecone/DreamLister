@@ -15,6 +15,14 @@
 		32A14FE31E0E890200DB4C9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A14FE11E0E890200DB4C9B /* LaunchScreen.storyboard */; };
 		32A14FEE1E0E890300DB4C9B /* DreamListerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A14FED1E0E890300DB4C9B /* DreamListerTests.swift */; };
 		32A14FF91E0E890300DB4C9B /* DreamListerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A14FF81E0E890300DB4C9B /* DreamListerUITests.swift */; };
+		32A150981E0E918E00DB4C9B /* NSStore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150901E0E918E00DB4C9B /* NSStore+CoreDataClass.swift */; };
+		32A150991E0E918E00DB4C9B /* NSStore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150911E0E918E00DB4C9B /* NSStore+CoreDataProperties.swift */; };
+		32A1509A1E0E918E00DB4C9B /* NSItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150921E0E918E00DB4C9B /* NSItem+CoreDataClass.swift */; };
+		32A1509B1E0E918E00DB4C9B /* NSItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150931E0E918E00DB4C9B /* NSItem+CoreDataProperties.swift */; };
+		32A1509C1E0E918E00DB4C9B /* NSImage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150941E0E918E00DB4C9B /* NSImage+CoreDataClass.swift */; };
+		32A1509D1E0E918E00DB4C9B /* NSImage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150951E0E918E00DB4C9B /* NSImage+CoreDataProperties.swift */; };
+		32A1509E1E0E918E00DB4C9B /* NSItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150961E0E918E00DB4C9B /* NSItemType+CoreDataClass.swift */; };
+		32A1509F1E0E918E00DB4C9B /* NSItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150971E0E918E00DB4C9B /* NSItemType+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		32A14FF41E0E890300DB4C9B /* DreamListerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamListerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A14FF81E0E890300DB4C9B /* DreamListerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListerUITests.swift; sourceTree = "<group>"; };
 		32A14FFA1E0E890300DB4C9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A150901E0E918E00DB4C9B /* NSStore+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSStore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		32A150911E0E918E00DB4C9B /* NSStore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSStore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		32A150921E0E918E00DB4C9B /* NSItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		32A150931E0E918E00DB4C9B /* NSItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		32A150941E0E918E00DB4C9B /* NSImage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSImage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		32A150951E0E918E00DB4C9B /* NSImage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSImage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		32A150961E0E918E00DB4C9B /* NSItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		32A150971E0E918E00DB4C9B /* NSItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,14 @@
 		32A14FC91E0E890200DB4C9B = {
 			isa = PBXGroup;
 			children = (
+				32A150901E0E918E00DB4C9B /* NSStore+CoreDataClass.swift */,
+				32A150911E0E918E00DB4C9B /* NSStore+CoreDataProperties.swift */,
+				32A150921E0E918E00DB4C9B /* NSItem+CoreDataClass.swift */,
+				32A150931E0E918E00DB4C9B /* NSItem+CoreDataProperties.swift */,
+				32A150941E0E918E00DB4C9B /* NSImage+CoreDataClass.swift */,
+				32A150951E0E918E00DB4C9B /* NSImage+CoreDataProperties.swift */,
+				32A150961E0E918E00DB4C9B /* NSItemType+CoreDataClass.swift */,
+				32A150971E0E918E00DB4C9B /* NSItemType+CoreDataProperties.swift */,
 				32A14FD41E0E890200DB4C9B /* DreamLister */,
 				32A14FEC1E0E890300DB4C9B /* DreamListerTests */,
 				32A14FF71E0E890300DB4C9B /* DreamListerUITests */,
@@ -99,6 +123,7 @@
 		32A14FD41E0E890200DB4C9B /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				32A150161E0E8D3500DB4C9B /* Model */,
 				32A14FD51E0E890200DB4C9B /* AppDelegate.swift */,
 				32A14FD71E0E890200DB4C9B /* ViewController.swift */,
 				32A14FD91E0E890200DB4C9B /* Main.storyboard */,
@@ -126,6 +151,21 @@
 				32A14FFA1E0E890300DB4C9B /* Info.plist */,
 			);
 			path = DreamListerUITests;
+			sourceTree = "<group>";
+		};
+		32A150161E0E8D3500DB4C9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32A150171E0E8D5100DB4C9B /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		32A150171E0E8D5100DB4C9B /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +302,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A1509B1E0E918E00DB4C9B /* NSItem+CoreDataProperties.swift in Sources */,
+				32A150981E0E918E00DB4C9B /* NSStore+CoreDataClass.swift in Sources */,
+				32A1509A1E0E918E00DB4C9B /* NSItem+CoreDataClass.swift in Sources */,
+				32A1509F1E0E918E00DB4C9B /* NSItemType+CoreDataProperties.swift in Sources */,
 				32A14FD81E0E890200DB4C9B /* ViewController.swift in Sources */,
+				32A150991E0E918E00DB4C9B /* NSStore+CoreDataProperties.swift in Sources */,
+				32A1509E1E0E918E00DB4C9B /* NSItemType+CoreDataClass.swift in Sources */,
 				32A14FD61E0E890200DB4C9B /* AppDelegate.swift in Sources */,
+				32A1509D1E0E918E00DB4C9B /* NSImage+CoreDataProperties.swift in Sources */,
+				32A1509C1E0E918E00DB4C9B /* NSImage+CoreDataClass.swift in Sources */,
 				32A14FDE1E0E890200DB4C9B /* DreamLister.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +557,7 @@
 				32A14FFF1E0E890300DB4C9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A150001E0E890300DB4C9B /* Build configuration list for PBXNativeTarget "DreamListerTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +566,7 @@
 				32A150021E0E890300DB4C9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A150031E0E890300DB4C9B /* Build configuration list for PBXNativeTarget "DreamListerUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +575,7 @@
 				32A150051E0E890300DB4C9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="NSImage" representedClassName="NSImage" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="toItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NSItem" inverseName="toImage" inverseEntity="NSItem" syncable="YES"/>
+        <relationship name="toStore" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NSStore" inverseName="toImage" inverseEntity="NSStore" syncable="YES"/>
+    </entity>
+    <entity name="NSItem" representedClassName="NSItem" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NSImage" inverseName="toItem" inverseEntity="NSImage" syncable="YES"/>
+        <relationship name="toItemType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NSItemType" inverseName="toItem" inverseEntity="NSItemType" syncable="YES"/>
+        <relationship name="toStore" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NSStore" inverseName="toItem" inverseEntity="NSStore" syncable="YES"/>
+    </entity>
+    <entity name="NSItemType" representedClassName="NSItemType" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NSItem" inverseName="toItemType" inverseEntity="NSItem" syncable="YES"/>
+    </entity>
+    <entity name="NSStore" representedClassName="NSStore" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NSImage" inverseName="toStore" inverseEntity="NSImage" syncable="YES"/>
+        <relationship name="toItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NSItem" inverseName="toStore" inverseEntity="NSItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="NSImage" positionX="-270" positionY="-210" width="128" height="88"/>
+        <element name="NSItem" positionX="-497" positionY="-135" width="128" height="148"/>
+        <element name="NSItemType" positionX="-695" positionY="-27" width="128" height="73"/>
+        <element name="NSStore" positionX="-198" positionY="54" width="128" height="88"/>
+    </elements>
 </model>
