@@ -14,6 +14,12 @@ class ItemDetailsVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        //Remove the back button text
+        if let topItem = self.navigationController?.navigationBar.topItem {
+            topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        }
     }
 
     

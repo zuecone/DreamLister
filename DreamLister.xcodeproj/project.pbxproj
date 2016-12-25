@@ -26,6 +26,7 @@
 		32A150A21E0EC92E00DB4C9B /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150A11E0EC92E00DB4C9B /* MaterialView.swift */; };
 		32A150A41E0ECCB700DB4C9B /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150A31E0ECCB700DB4C9B /* ItemCell.swift */; };
 		32B3C94F1E106F5300E93094 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3C94E1E106F5300E93094 /* ItemDetailsVC.swift */; };
+		32B3C9511E10728F00E93094 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3C9501E10728F00E93094 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		32A150A11E0EC92E00DB4C9B /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		32A150A31E0ECCB700DB4C9B /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		32B3C94E1E106F5300E93094 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		32B3C9501E10728F00E93094 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			children = (
 				32A150A11E0EC92E00DB4C9B /* MaterialView.swift */,
 				32A150A31E0ECCB700DB4C9B /* ItemCell.swift */,
+				32B3C9501E10728F00E93094 /* CustomTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				32A1509D1E0E918E00DB4C9B /* NSImage+CoreDataProperties.swift in Sources */,
 				32A1509C1E0E918E00DB4C9B /* NSImage+CoreDataClass.swift in Sources */,
 				32A14FDE1E0E890200DB4C9B /* DreamLister.xcdatamodeld in Sources */,
+				32B3C9511E10728F00E93094 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
