@@ -24,6 +24,8 @@
 		32A1509E1E0E918E00DB4C9B /* NSItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150961E0E918E00DB4C9B /* NSItemType+CoreDataClass.swift */; };
 		32A1509F1E0E918E00DB4C9B /* NSItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150971E0E918E00DB4C9B /* NSItemType+CoreDataProperties.swift */; };
 		32A150A21E0EC92E00DB4C9B /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150A11E0EC92E00DB4C9B /* MaterialView.swift */; };
+		32A150A41E0ECCB700DB4C9B /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A150A31E0ECCB700DB4C9B /* ItemCell.swift */; };
+		32B3C94F1E106F5300E93094 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3C94E1E106F5300E93094 /* ItemDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		32A150961E0E918E00DB4C9B /* NSItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSItemType+CoreDataClass.swift"; path = "../NSItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		32A150971E0E918E00DB4C9B /* NSItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSItemType+CoreDataProperties.swift"; path = "../NSItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		32A150A11E0EC92E00DB4C9B /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		32A150A31E0ECCB700DB4C9B /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		32B3C94E1E106F5300E93094 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			children = (
 				32A150A01E0EC90F00DB4C9B /* View */,
 				32A150161E0E8D3500DB4C9B /* Model */,
+				32B3C94D1E106F0000E93094 /* Controller */,
 				32A14FD51E0E890200DB4C9B /* AppDelegate.swift */,
 				32A14FD71E0E890200DB4C9B /* MainVC.swift */,
 				32A14FD91E0E890200DB4C9B /* Main.storyboard */,
@@ -175,8 +180,17 @@
 			isa = PBXGroup;
 			children = (
 				32A150A11E0EC92E00DB4C9B /* MaterialView.swift */,
+				32A150A31E0ECCB700DB4C9B /* ItemCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		32B3C94D1E106F0000E93094 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32B3C94E1E106F5300E93094 /* ItemDetailsVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A150A41E0ECCB700DB4C9B /* ItemCell.swift in Sources */,
 				32A1509B1E0E918E00DB4C9B /* NSItem+CoreDataProperties.swift in Sources */,
 				32A150981E0E918E00DB4C9B /* NSStore+CoreDataClass.swift in Sources */,
 				32A1509A1E0E918E00DB4C9B /* NSItem+CoreDataClass.swift in Sources */,
@@ -320,6 +335,7 @@
 				32A1509F1E0E918E00DB4C9B /* NSItemType+CoreDataProperties.swift in Sources */,
 				32A14FD81E0E890200DB4C9B /* MainVC.swift in Sources */,
 				32A150991E0E918E00DB4C9B /* NSStore+CoreDataProperties.swift in Sources */,
+				32B3C94F1E106F5300E93094 /* ItemDetailsVC.swift in Sources */,
 				32A1509E1E0E918E00DB4C9B /* NSItemType+CoreDataClass.swift in Sources */,
 				32A14FD61E0E890200DB4C9B /* AppDelegate.swift in Sources */,
 				32A1509D1E0E918E00DB4C9B /* NSImage+CoreDataProperties.swift in Sources */,
