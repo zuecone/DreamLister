@@ -38,7 +38,7 @@
                                 <rect key="frame" x="16" y="132" width="343" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="4v2-rl-Kq1" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="4v2-rl-Kq1" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4v2-rl-Kq1" id="Fd1-Qz-dAa">
@@ -69,7 +69,7 @@
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="9wJ-Rz-JQl">
                                                             <rect key="frame" x="116" y="58" width="203" height="77"/>
-                                                            <mutableString key="text">testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 </mutableString>
+                                                            <string key="text">testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 testing 123 </string>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -109,6 +109,7 @@
                                         <connections>
                                             <outlet property="details" destination="9wJ-Rz-JQl" id="ciG-WZ-JS5"/>
                                             <outlet property="price" destination="fv7-FW-T9e" id="rqM-Zf-uw0"/>
+                                            <outlet property="thumb" destination="vqs-c9-3Ro" id="70K-YR-UUm"/>
                                             <outlet property="title" destination="Oam-26-fCs" id="iAb-xG-4dK"/>
                                         </connections>
                                     </tableViewCell>
@@ -210,6 +211,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" red="0.87694468800000003" green="0.87694468800000003" blue="0.87694468800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="3Cg-7X-6xY" eventType="touchUpInside" id="KSb-th-h91"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd9-yn-eIV">
                                 <rect key="frame" x="141" y="263" width="93" height="20"/>
@@ -252,6 +256,12 @@
                             <color key="tintColor" red="0.87694468800885694" green="0.066333424061112228" blue="0.031805193056429884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="hsu-LQ-BkZ" id="a3n-Uy-bqj"/>
+                        <outlet property="priceField" destination="MaQ-EX-hVW" id="I3e-ol-vod"/>
+                        <outlet property="storePicker" destination="sp3-C3-XTz" id="6Ca-GF-5i6"/>
+                        <outlet property="titleField" destination="ZNG-sb-R4K" id="DKQ-1j-ArI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRo-hG-2Vn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,7 +272,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cIk-3e-Wgh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Rks-Ab-V7y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rks-Ab-V7y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>

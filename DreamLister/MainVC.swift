@@ -24,7 +24,7 @@ class MainVC: UIViewController,UITableViewDelegate,UITableViewDataSource, NSFetc
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
-        
+                
         //generateTestData()
         attemptFetch()
         
@@ -36,13 +36,7 @@ class MainVC: UIViewController,UITableViewDelegate,UITableViewDataSource, NSFetc
         configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
         
         
-        return UITableViewCell()
-    }
-    
-    func configureCell(cell: ItemCell, indexPath: NSIndexPath){
-        let item = controller.object(at: indexPath as IndexPath)
-        cell.configureCell(item: item)
-        //update cell
+        return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -62,25 +56,6 @@ class MainVC: UIViewController,UITableViewDelegate,UITableViewDataSource, NSFetc
             return sectionInfo.numberOfObjects
         }
         return 0
-    }
-    
-    func attemptFetch(){
-        let fetchRequest: NSFetchRequest<NSItem> = NSItem.fetchRequest()
-        let dateSort = NSSortDescriptor(key: "created", ascending: false)  //created here refers to the NSItem Entity's created attribute.
-        fetchRequest.sortDescriptors = [dateSort]
-        
-        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
-        
-        self.controller = controller
-        
-        do {
-            try controller.performFetch()
-            
-        }catch{
-            let error = error as NSError
-            print("\(error)")
-            
-        }
     }
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
@@ -121,6 +96,55 @@ class MainVC: UIViewController,UITableViewDelegate,UITableViewDataSource, NSFetc
             break
         }
     }
+
+    
+    func configureCell(cell: ItemCell, indexPath: NSIndexPath){
+        let item = controller.object(at: indexPath as IndexPath)
+        cell.configureCell(item: item)
+        //update cell
+    }
+    
+    
+    //when something is selected, this will perform the segue.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let objs = controller.fetchedObjects , objs.count > 0 {
+            let item = objs[indexPath.row]
+            performSegue(withIdentifier: "ItemDetailVC", sender: item)
+        }
+        
+    }
+    
+    //thise will override prepare for segue to send the data item that is selected to the ItemDetailsVC Class
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ItemDetailVC"{
+            if let destination = segue.destination as? ItemDetailsVC {
+                if let item = sender as? NSItem {
+                    destination.itemToEdit = item
+                }
+            }
+        }
+    }
+
+    
+    func attemptFetch(){
+        let fetchRequest: NSFetchRequest<NSItem> = NSItem.fetchRequest()
+        let dateSort = NSSortDescriptor(key: "created", ascending: false)  //created here refers to the NSItem Entity's created attribute.
+        fetchRequest.sortDescriptors = [dateSort]
+        
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        controller.delegate = self
+        self.controller = controller
+        
+        do {
+            try controller.performFetch()
+            
+        }catch{
+            let error = error as NSError
+            print("\(error)")
+            
+        }
+    }
+    
     
     func generateTestData(){
         let item = NSItem(context: context)

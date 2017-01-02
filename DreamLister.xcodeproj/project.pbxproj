@@ -127,7 +127,6 @@
 				32A150161E0E8D3500DB4C9B /* Model */,
 				32B3C94D1E106F0000E93094 /* Controller */,
 				32A14FD51E0E890200DB4C9B /* AppDelegate.swift */,
-				32A14FD71E0E890200DB4C9B /* MainVC.swift */,
 				32A14FD91E0E890200DB4C9B /* Main.storyboard */,
 				32A14FDF1E0E890200DB4C9B /* Assets.xcassets */,
 				32A14FE11E0E890200DB4C9B /* LaunchScreen.storyboard */,
@@ -192,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				32B3C94E1E106F5300E93094 /* ItemDetailsVC.swift */,
+				32A14FD71E0E890200DB4C9B /* MainVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
